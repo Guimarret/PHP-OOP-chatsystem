@@ -1,0 +1,20 @@
+<form name="myform">
+    <ul id="addrlist">
+        <li><input type="email" name="email" /></li>
+    </ul>
+    <button id="addaddr">Add an address</button>
+</form>
+
+<script>
+    if (document.getElementById("addaddr").onlick = active)
+    {x++}
+    document.getElementById("addaddr").onclick = function() {
+        var li = document.createElement("li");
+        var input = document.createElement("input");
+        input.setAttribute("type", "email");
+        input.setAttribute("name", "email");
+        li.appendChild(input);
+        document.getElementById("addrlist").appendChild(li);
+        return false;
+    };
+</script>

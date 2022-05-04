@@ -1,6 +1,6 @@
 <?
-include "seguranca.php";
-include "conexao.php";
+include "config/seguranca.php";
+include "config/conexao.php";
 
 if (isset($_GET["enviar"]) == '1') {
     $mail = $_SESSION["loginEmail"];

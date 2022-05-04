@@ -1,8 +1,6 @@
-<? include "seguranca.php";
-    include "conexao.php";
+<? include "config/seguranca.php";
+    include "config/conexao.php";
     
-    
-   
   if (isset($_GET["newpwd"])==1){
       $password = $_POST["password"];
       $id_mail = $_SESSION["loginEmail"];
@@ -43,6 +41,9 @@ if ($dados[0] == ''){
 }
 
 ?>
+<header>
+<script src="public/js/registrar.js"></script>
+</header>
   <h1>Redefinição de senha</h1>
   <h2> Senha antiga </h2>
   <form class="form" method="post" action="https://guiphp.com/mudarsenha.php?newpwd=1">
@@ -55,16 +56,5 @@ if ($dados[0] == ''){
 
 
 
-<script>
-    function validatePassword() {
-                var password = document.getElementById("newpwd").value;
-                var confirm_password = document.getElementById("newpwd2").value;
-                if (password != confirm_password) {
-                    alert("Senhas diferentes!");
-                    return false;
-                } else {
-                    return true;
-                }
-            }    
-  </script>
+
 

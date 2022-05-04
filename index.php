@@ -7,7 +7,7 @@ if (isset($_GET['erro']) == '1'){
 if(isset($_GET['sair']) == '1'){
    session_destroy();
 }
-echo '
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +16,7 @@ echo '
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="public/css/site.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@ echo '
                 <input class="form-control password" name="password" type="password" placeholder="Password">
                 <button class="btn-primary" type="submit" >Login</button>
             </form>
-            <h3 class="registrar" ><a href="http://guiphp.com/registrar.php/">Registration</a></h3>
+            <h3 class="registrar"><a href="http://guiphp.com/registrar.php/">Registration</a></h3>
             </section>
         
         </section>
@@ -46,6 +46,6 @@ echo '
 </body>
 
 </html>';
-?>
+
 
         

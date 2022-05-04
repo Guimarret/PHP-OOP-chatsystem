@@ -1,5 +1,5 @@
-<? include "seguranca.php";
-    include "conexao.php";
+<? include "config/seguranca.php";
+    include "config/conexao.php";
     
     
    
